@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <div id="nav"> 
+      <router-link to="/" tag="button">Home</router-link> |
+      <router-link to="/about" tag="button">关注页</router-link>
+    </div>
   </div>
 </template>
+
+<script>
+// import TabBar from './components/tabbar/TabBar'
+// import MainTabBar from './components/mainTabBar/MainTabBar'
+export default {
+  name: 'APP',
+
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -21,12 +30,14 @@
   padding: 30px;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
+  font-weight: bold;
+  color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  &.router-link-exact-active {
+    color: #42b983;
   }
 }
+}
+
+
 </style>
