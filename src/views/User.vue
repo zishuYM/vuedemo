@@ -1,5 +1,5 @@
 <template>
-  <div class="zpao">
+  <div class="User">
     <h1>简易GitHub客户端</h1>
     <h2>{{address}}</h2>
     <img :src="photo">
